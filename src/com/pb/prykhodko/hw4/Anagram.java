@@ -18,9 +18,7 @@ public class Anagram {
     }
 
     private static void anagramCheck(String str1, String str2) {
-        String str1ToCheck = getString(str1);
-        String str2ToCheck = getString(str2);
-        if (str1ToCheck.equals(str2ToCheck)){
+        if (getString(str1).equals(getString(str2))){
             System.out.println("Это анаграмма");
         }else System.out.println("Это не анаграмма");
     }
