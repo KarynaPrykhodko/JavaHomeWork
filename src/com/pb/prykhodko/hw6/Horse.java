@@ -24,7 +24,7 @@ public class Horse extends Animal {
 
     @Override
     public String toString() {
-        return "Я лошадь, я кушаю: " + getFood() + " и я живу: "+ getLocation() + " скачу со скоростью " + runningSpeed + " километров в час";
+        return "Я лошадь, я кушаю: " + getFood() + " и я живу: " + getLocation() + " скачу со скоростью " + runningSpeed + " километров в час";
     }
 
     @Override

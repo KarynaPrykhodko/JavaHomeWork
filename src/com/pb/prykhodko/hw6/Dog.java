@@ -23,7 +23,7 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Я собака, и я кушаю: " + getFood()+" и я живу: "+ getLocation() + " гавкаю " + howManyTimesBarksPerDay + " раз в день";
+        return "Я собака, и я кушаю: " + getFood() + " и я живу: " + getLocation() + " гавкаю " + howManyTimesBarksPerDay + " раз в день";
     }
 
     @Override
