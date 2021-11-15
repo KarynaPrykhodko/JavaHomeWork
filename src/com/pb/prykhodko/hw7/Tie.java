@@ -7,15 +7,12 @@ public class Tie extends Clothes implements ManClothes {
 
     @Override
     public void dressMan() {
+        System.out.println("Галстук: " + size + ", цена: " + cost + ", цвет: " + color);
 
     }
 
     @Override
     public String toString() {
-        return "Tie{" +
-                "size=" + size +
-                ", cost=" + cost +
-                ", color='" + color + '\'' +
-                '}';
+        return "Галстук: размер - " + size + ", цена - " + cost + ", цвет - " + color;
     }
 }

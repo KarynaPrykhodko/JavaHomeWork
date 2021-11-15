@@ -7,20 +7,18 @@ public class Tshirt extends Clothes implements ManClothes, WomenClothes {
 
     @Override
     public void dressMan() {
+        System.out.println("Футболка мужская: " + size + ", цена: " + cost + ", цвет: " + color);
 
     }
 
     @Override
     public void dressWomen() {
+        System.out.println("Футболка женская: " + size + ", цена: " + cost + ", цвет: " + color);
 
     }
 
     @Override
     public String toString() {
-        return "Tshirt{" +
-                "size=" + size +
-                ", cost=" + cost +
-                ", color='" + color + '\'' +
-                '}';
+        return "Футболка: размер - " + size + ", стоимость  - " + cost + ", цвет - " + color;
     }
 }

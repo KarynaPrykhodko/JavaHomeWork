@@ -9,7 +9,7 @@ public class Skirt extends Clothes implements WomenClothes {
 
     @Override
     public void dressWomen() {
-        System.out.println( Pants.class.getSimpleName() + " size: "+ size + " price "+ cost + " color "+ color);
+        System.out.println("Юбка: " + size + ", цена: " + cost + ", цвет: " + color);
 
     }
 

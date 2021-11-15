@@ -9,21 +9,17 @@ public class Pants extends Clothes implements ManClothes, WomenClothes {
 
     @Override
     public String toString() {
-        return "Pants{" +
-                "size=" + size +
-                ", cost=" + cost +
-                ", color='" + color + '\'' +
-                '}';
+        return "Штаны унисекс: " + "размер - " + size + ", цена: - " + cost + " грн., цвет - " + color;
     }
 
     @Override
     public void dressMan() {
-        System.out.println(Pants.class.getSimpleName() + " size: "+ size + " price "+ cost + " color "+ color);
+        System.out.println("Штаны мужские: " + size + ", цена: " + cost + ", цвет: " + color);
 
     }
 
     @Override
     public void dressWomen() {
-        System.out.println( Pants.class.getSimpleName() + " size: "+ size + " price "+ cost + " color "+ color);
+        System.out.println("Штаны женские: " + size + ", цена: " + cost + ", цвет: " + color);
     }
 }
