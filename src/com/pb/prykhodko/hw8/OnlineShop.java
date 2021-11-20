@@ -1,35 +1,39 @@
 package com.pb.prykhodko.hw8;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class OnlineShop {
     public static void main(String[] args) {
-        int count = 0;
+
         Auth auth = new Auth();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Добро пожаловать на наш сервис, пройдите регистрацию");
         System.out.println("Введите логин (от 2 до 20 символов, только латинские буквы ");
-        checkLoginForCompliance(scanner.nextLine(), auth);
-//        System.out.println("Введите пароль: ");
-//        auth.setPassword(scanner.nextLine());
-//        System.out.println("Введите пароль повторно: ");
-//        String confPas = scanner.nextLine();
-    }
-    static void checkLoginForCompliance(String str, Auth auth){
+        String s = scanner.nextLine();
+        System.out.println("Введите пароль ( от 5 символов только латинские символы и цифры а также знак _ :");
+        String s1 = scanner.nextLine();
+        System.out.println("Введите пароль повторно: ");
+        String s2 = scanner.nextLine();
 
-        if (str.matches("^[a-zA-Z][a-zA-Z0-9]{2,19}$")) {
-            auth.setLogin(str);
-        }else {
-            System.out.println("Введенный логин не соответствует условиям");
+        try {
+            auth.signUp(s,s1,s2);
+        } catch (WrongLoginException | WrongPasswordException e) {
+            e.printStackTrace();
         }
-    }
-    static void checkPasswordForCompliance(String str, Auth auth){
-        if (str.matches("'/^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z]).{8,20}$/'")) {
-            auth.setLogin(str);
-        }else {
-            System.out.println("Введенный логин не соответствует условиям");
+
+        System.out.println("Введите логин и пароль для входа на сервис: ");
+        System.out.println("Введите логин: ");
+        String s3 = scanner.nextLine();
+        System.out.println("Введите пароль: ");
+        String s4 = scanner.nextLine();
+        try {
+            auth.signIn(s3,s4);
+        } catch (WrongPasswordException | WrongLoginException e) {
+            e.printStackTrace();
         }
+
     }
+
+
 }
