@@ -1,0 +1,31 @@
+[ {
+  "name" : "Карина",
+  "dateOfBirth" : "1994-05-07",
+  "phoneNumbers" : [ "1111111111", "22222222" ],
+  "address" : "Киев",
+  "changeOrMakeContactDate" : "2021/12/19 22:29:01"
+}, {
+  "name" : "Дмитрий",
+  "dateOfBirth" : "1990-07-19",
+  "phoneNumbers" : [ "3333333333" ],
+  "address" : "Одесса",
+  "changeOrMakeContactDate" : "2021/12/19 23:41:12"
+}, {
+  "name" : "Вероника",
+  "dateOfBirth" : "1999-05-06",
+  "phoneNumbers" : [ "4444444444" ],
+  "address" : "Кропивницк",
+  "changeOrMakeContactDate" : "2021/12/19 22:30:08"
+}, {
+  "name" : "Саша",
+  "dateOfBirth" : "1990-07-05",
+  "phoneNumbers" : [ "111111111" ],
+  "address" : "Трускавец",
+  "changeOrMakeContactDate" : "2021/12/20 00:04:28"
+}, {
+  "name" : "Егор",
+  "dateOfBirth" : "1996-04-15",
+  "phoneNumbers" : [ "11111111111111", "222222222222222222222222", "2222222222222222", "8888888888888888" ],
+  "address" : "Ровно",
+  "changeOrMakeContactDate" : "2021/12/20 00:06:30"
+} ]
