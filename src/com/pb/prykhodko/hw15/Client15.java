@@ -15,8 +15,8 @@ public class Client15 extends JFrame {
     private Socket client15Socket;
     private Scanner inMessage;
     private PrintWriter outMessage;
-    private JTextField jtfMessage;
-    private JTextArea jtaTextAreaMessage;
+    private final JTextField jtfMessage;
+    private final JTextArea jtaTextAreaMessage;
 
     public Client15() {
         try {
@@ -68,6 +68,7 @@ public class Client15 extends JFrame {
                         }
                     }
                 } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
         }).start();
@@ -80,7 +81,7 @@ public class Client15 extends JFrame {
                     inMessage.close();
                     client15Socket.close();
                 } catch (IOException exc) {
-
+                    exc.printStackTrace();
                 }
             }
         });
